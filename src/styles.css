@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Iansui&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.hero-container {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50rem;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  align-self: flex-start;
+
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  transition: ease 0.4s;
+}
+
+.scrolled {
+  transition: ease 0.4s;
+  background: rgba(133, 130, 130, 0.47);
+  backdrop-filter: blur(10px);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  color: white;
+}
+
+.nav-bar-logo {
+  align-self: center;
+  font-family: "Atma", sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  align-self: center;
+}
+
+.hero-text {
+  height: fit-content;
+  font-family: "Iansui", sans-serif;
+  font-size: 3.6rem;
+  align-self: flex-end;
+  color: white;
+  border-radius: 5%;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  font-family: "Atma";
+  gap: 3rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.recipes-heading {
+  text-decoration: underline;
+  font-family: "Iansui", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+.recipes {
+  margin-top: 8rem;
+  align-self: center;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 6rem;
+  row-gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.recipe {
+  list-style-type: none;
+  justify-self: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 15rem;
+  height: 18rem;
+  gap: 1rem;
+  transform: scale(1);
+  transition: ease 500ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.recipe:hover {
+  transition: ease 500ms;
+  transform: scale(1.1);
+}
+
+.recipe-img-container {
+  width: 100%;
+  height: 83.333%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.recipe-img {
+  width: 100%;
+  height: 100%;
+}
+
+.recipe-preview-text {
+  color: #343a40;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn--like {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+[name="heart"] {
+  color: red;
+}
+
+[name="heart-outline"] {
+  color: #343a40;
+}
+
+.footer {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  font-family: "Atma", sans-serif;
+  font-weight: 400;
+  color: #343a40;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.footer li {
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: #343a40;
+}
